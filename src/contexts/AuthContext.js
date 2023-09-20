@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { auth } from '../Base'
-import { GithubAuthProvider, GithubAuthProvider, signInWithPopup, signOut } from 'firebase/auth'
+import { GithubAuthProvider, signInWithPopup, signOut } from 'firebase/auth'
 
 const AuthContext = React.createContext();
 
@@ -12,7 +12,7 @@ export default function AuthProvider({children}) {
     const [currentUser, setCurrentUser] = useState();
     const [loading, setLoading] = useState(true);
 
-    const GithubAuthProvider = new GithubAuthProvider()
+    const githubAuthProvider = new GithubAuthProvider()
 
     async function login() {
         return (signInWithPopup(auth, githubAuthProvider).then(authData => {
@@ -39,7 +39,6 @@ export default function AuthProvider({children}) {
 
     return (
         <AuthContext.Provider value={value}>
-            {/* Below, we wait for AuthContext info to populate before rendering the child components. */}
             {!loading && children}
         </AuthContext.Provider>
       )

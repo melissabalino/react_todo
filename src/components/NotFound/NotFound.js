@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../Images/SpilledCoffeeBeans.jpg'
+import image from '../../Images/SpilledCoffeeBeans.jpg'
 import './NotFound.css'
 
 export default function NotFound() {
