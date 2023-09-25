@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.profilePic {
+    width: 65%;
+    border-radius: 100px 0;
+    margin-top: 4%;
+}
+
+.about-text p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    text-align: justify;
+    margin: 1em;
+    margin-bottom: 0;
+    padding: 1.5em;
+    padding-bottom: 0;
+}
+
+.about-text p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.about-text p a.centriq:hover {
+    background-color: rgba(255, 150, 21, .25);
+}
+.about-text p.linkedin {
+    font-size: 2em;
+    text-align: center;
+    border-radius: 20px 20px;
+  }
+
+  .about-text p.linkedin:hover {
+    background-color: rgba(0, 119, 181, .25);
+
+  }

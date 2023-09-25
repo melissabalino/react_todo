@@ -1,0 +1,32 @@
+section.todos article h1 {
+    font-size: 2.5em;
+}
+
+.todos table {
+    opacity: .9;
+}
+.todos table th {
+    font-size: 1.3em;
+
+}
+.todos table tr td {
+
+    font-size: 1.2em;
+    padding: auto;
+}
+
+.createContainer{
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.todos h1, .categories h1 {
+    font-size: 4em;
+}
+
+input.checkbox {
+    width: 2em;
+    height: 2em;
+    accent-color: #198754;
+}

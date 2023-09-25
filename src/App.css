@@ -1,38 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
 .App {
+  position: relative;
+  min-height: 83vh;
+  margin-bottom: 0 !important;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand svg {
+  font-size: 2.5em;
+  margin-left: .5em;
+  position: relative;
+  top: -10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand-text {
+  font-family: 'Farsan', cursive;
+  font-size: 2.5em;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+  font-size: 1.25em;
 }
 
-.App-link {
-  color: #61dafb;
+section.notFound,
+section.about,
+section.todos, 
+section.categories,
+section.login {
+  min-height: 85vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#editLink:hover, #editLink:focus {
+  background-color: #ffc107;
+}
+
+#deleteLink:hover, #editLink:focus {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.footerContainer {
+  background-color: white;
 }

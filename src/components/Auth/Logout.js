@@ -7,15 +7,14 @@ export default function Logout() {
     const { logout } = useAuth()
     const navigate = useNavigate()
 
-    function handleAuth() { //step 3
+    function handleAuth() {
         logout()
         navigate('/')
     }
-
-    return (
-        <div className='logout text-center p-3 bg-dark text-white'>
+  return (
+    <div className='logout text-center pt-2'>
         <Profile />
-        <button className="btn btn-info" onClick={() => handleAuth()}>
+        <button className="btn btn-danger" onClick={() => handleAuth()}>
             Logout
         </button>
     </div>

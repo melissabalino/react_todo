@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.categories {
+    min-height: 90vh;
+}
+
+.categories article h1 {
+    font-size: 2.5em;
+}
+
+.categories table {
+    opacity: .9;
+}
+.categories table th {
+    font-size: 1.3em;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.categories table tr {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.createCategoryContainer {
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    padding: 1em;
+}
